@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUCION EDUCATIVA LLANO VERDE- DEPARTAMENTO DEL  NARIÑO O/I 2025</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+
+            <img src="img/zeVPL1lF_400x400.jpg" alt="NARIÑO" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#lugares">Lugares</a></li>
+            <li><a href="#hotel">Hotel</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li class="cart-link"><a href="#" onclick="openCartModal()"><i class="fas fa-shopping-bag"></i> Carrito (<span id="cart-counter">0</span>)</a></li>
+        </ul>
+    </nav>
+    <div class="catalogo-container">
+        
+        <header>
+            <h1>🌟 Departamento del Nariño🌟</h1>
+            <p> La institucion educativa llano verde impulsa al nariño,mira informacion sobre ella. <span class="header-decoration">| CODE |</span></p>
+        </header>
+
+        <div class="seccion" id="lugares">
+            <h2>PARA VISITAR (Lugares)</h2>
+            <div class="productos-grid">
+                
+                <div class="producto-card">
+                    <img src="img/unnamed.jpg" alt="Laguna Verde" class="producto-imagen">
+                    <h3>lugar"Laguna Verde"</h3>
+                    <p class="descripcion">Un lago de color verde intenso ubicado en la cima del volcan Azufral. **(Parte de la Promo 1)**</p>
+                    
+                    <span class="precio">$ 70.000 COP</span>
+                    
+                    <label for="color-prod-1" class="color-label">Eliges un guia:</label>
+                    <select id="color-prod-1" class="color-select">
+                        <option value="">-- Seleccionas guia --</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                        
+                    </select>
+
+                    <label for="talla-prod-1" class="color-label">Cuantas personas:</label>
+                    <select id="talla-prod-1" class="color-select">
+                        <option value="">-- Personas --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Camiseta Tech-Code', 'color-prod-1', 'talla-prod-1')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Camiseta Tech-Code', 'S, M, L, XL')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Laguna La Cocha.jpg" alt="Laguna de la Cocha" class="producto-imagen">
+                    <h3>Laguna de la "Cocha"</h3>
+                    <p class="uno de los cuerpos de agua mas frande de colombia,conocido por su belleza natura. **(Parte de la Promo 1)**</p>
+                   
+                    <span class="precio">$ 70.000 COP</span>
+
+                    <label for="color-prod-2" class="color-label">Eliges un guia :</label>
+                    <select id="color-prod-2" class="color-select">
+                        <option value="">-- Seleccionas guia --</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <label for="talla-prod-2" class="color-label">Cuantas personas:</label>
+                    <select id="talla-prod-2" class="color-select">
+                        <option value="">-- personas --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Jean estilo jogger', 'color-prod-2', 'talla-prod-2')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Jean estilo jogger', '28, 30, 32, 34')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/Galeras.png" alt="Volcan Galeras" class="producto-imagen">
+                    <h3>Volcan Galeras(Guia incluido) </h3>
+                    <p class="descripcion">Ideal para montañismo.</p>
+                
+                    <span class="precio">$ 120.000 COP</span>
+
+                    <label for="color-prod-3" class="color-label">transporte:</label>
+                    <select id="color-prod-3" class="color-select">
+                        <option value="">-- transporte --</option>
+                        <option value="Caminar">Caminar</option>
+                        <option value="Carro">Carro</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label for="talla-prod-3" class="color-label">personas:</label>
+                    <select id="talla-prod-3" class="color-select">
+                        <option value="">-- personas --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Chaqueta urban', 'color-prod-3', 'talla-prod-3')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Chaqueta urban', 'M, L, XL')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/sapooo.png" alt="Milagro de Dios" class="producto-imagen">
+                    <h3>Milagro de Dios"religioso"</h3>
+                    <p class="descripcion"> Un centro turisticos en Ospina con senderos naturales,un cristo Redentor.</p>
+                   
+                    <span class="precio">$ 90.000 COP</span>
+                    
+                    <label for="color-prod-4" class="color-label">Eliges un guia:</label>
+                    <select id="color-prod-4" class="color-select">
+                        <option value="">-- Selecciona guia --</option>
+                        <option value="Si">Si </option>
+                        <option value="No" >No </option>
+                    </select>
+
+                    <label for="talla-prod-4" class="color-label">Cuantas personas:</label>
+                    <select id="talla-prod-4" class="color-select">
+                        <option value="">-- personas --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Moda urban', 'color-prod-4', 'talla-prod-4')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Moda urban', 'S, M, L')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/274-1_Santuario_de_las_Lajas.jpg" alt="Santuario de las Lajas" class="producto-imagen">
+                    <h3>Santuario de las Lajas</h3>
+                    <p class="descripcion">Famosa iglesia neogotica construida en un cañon.</p>
+                    
+                    <span class="precio">$ 55.000 COP</span>
+                    
+                    <label for="color-prod-5" class="color-label">Eliges un guia:</label>
+                    <select id="color-prod-5" class="color-select">
+                        <option value="">-- Selecciona guia --</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    
+                    <label for="talla-prod-5" class="color-label">Cuantas personas</label>
+                    <select id="talla-prod-5" class="color-select">
+                        <option value="">-- Seleccionar personas--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Gorras urban', 'color-prod-5', 'talla-prod-5')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Gorras urban', 'S, M, XL')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="seccion" id="hotel">
+            <h2>HOTELES(reserva ya)</h2>
+            <div class="productos-grid">
+                
+                <div class="producto-card">
+                    <img src="img/getlstd-property-photo.jpg" alt="Hotel la caba" class="producto-imagen">
+                    <h3>Hotel la caba "Urban"</h3>
+                    <p class="descripcion">Elegancia  para el día a día. **(Parte de la Promo 2)**</p>
+                    
+                    <span class="precio">$ 70.000 COP</span>
+
+                    <label for="color-prod-6" class="color-label">Elige la jornadaa:</label>
+                    <select id="color-prod-6" class="color-select">
+                        <option value="">-- Selecciona Jornada --</option>
+                        <option value="Mañana">Mañana</option>
+                        <option value="Noches">Noches</option>
+                    </select>
+
+                    <label for="talla-prod-6" class="color-label">Cuantos dias:</label>
+                    <select id="talla-prod-6" class="color-select">
+                        <option value="">-- Selecciona Talla --</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Jogger mujer', 'color-prod-6', 'talla-prod-6')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Jogger mujer', 'XS, S, M, L')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/villacandela.jpg" alt="HOTEL las cañas" class="producto-imagen">
+                    <h3>HOTEL las "cañas"</h3>
+                    <p class="descripcion">hotel, comodo el mas recomendado. **(Parte de la Promo 1)**</p>
+                  
+                    <span class="precio">$ 70.000 COP</span>
+
+                    <label for="color-prod-7" class="color-label">Elige la jornada:</label>
+                    <select id="color-prod-7" class="color-select">
+                        <option value="">-- Selecciona Jornada --</option>
+                        <option value="Mañana">Azul Claro Deslavado</option>
+                        <option value="Tarde">Tarde</option>
+                    </select>
+                    
+                    <label for="talla-prod-7" class="color-label">Cuantos dias:</label>
+                    <select id="talla-prod-7" class="color-select">
+                        <option value="">-- Selecciona los dias--</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Jogger urban mujer', 'color-prod-7', 'talla-prod-7')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Jogger urban mujer', '26, 28, 30, 32')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <img src="img/hotel-exterior.jpg" alt="HOTEL INTERCONTINENTAL" class="producto-imagen">
+                    <h3>HOTEL INTERCONTINENETAL</h3>
+                    <p class="descripcion">. **(Parte de la Promo 2)**</p>
+                   
+                    <span class="precio">$ 100.000 COP</span>
+                    
+                    <label for="color-prod-8" class="color-label">Elige la jornada:</label>
+                    <select id="color-prod-8" class="color-select">
+                        <option value="">-- Selecciona Jornada --</option>
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                    </select>
+
+                    <label for="talla-prod-8" class="color-label">Cuantos dias:</label>
+                    <select id="talla-prod-8" class="color-select">
+                        <option value="">-- Selecciona los dias --</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Conjunto mabe', 'color-prod-8', 'talla-prod-8')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Conjunto mabe', 'S, M, L')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+                
+                 <div class="producto-card">
+                    <img src="img/overview.jpg" alt="HOTEL SWATY WIPE" class="producto-imagen">
+                    <h3> HOTEL SWATY WIPE</h3>
+                    <p class="descripcion">Diseñados para alto rendimiento, brindan soporte y comodidad. (Perfecto para jugar **fútbol**).</p>
+                  
+                    <span class="precio">$ 1.0000 COP</span>
+                    
+                    <label for="color-prod-9" class="color-label">Elige la jornada:</label>
+                    <select id="color-prod-9" class="color-select">
+                        <option value="">-- Selecciona Jornada --</option>
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                    </select>
+
+                    <label for="talla-prod-9" class="color-label">Cuantas dias:</label>
+                    <select id="talla-prod-9" class="color-select">
+                        <option value="">-- Selecciona Dias --</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Chaquetas beisboleras', 'color-prod-9', 'talla-prod-9')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Chaquetas beisboleras', 'XS, S, M, L')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+                 
+                 <div class="producto-card">
+                    <img src="img/WhatsApp-Image-2022-10-21-at-6.00.37-PM-3-1024x650.jpeg" alt="HOTEL LA PRIMAVERA  " class="producto-imagen">
+                    <h3>HOTEL LA PRIMAVERA</h3>
+                    <p class="descripcion">perfecto para las tardes frescas.</p>
+                    
+                    <span class="precio">$ 55.000 COP</span>
+                    
+                    <label for="color-prod-10" class="color-label">Elige la jornada:</label>
+                    <select id="color-prod-10" class="color-select">
+                        <option value="">-- Selecciona la jornada --</option>
+                        <option value="Mañana">Negro</option>
+                        <option value="Naranja">Naranja</option>
+                        <option value="azul">Azul</option>
+                        <option value="Blanca">Blanca</option>
+                        <option value="Beige">Beige</option>
+                    </select>
+
+                    <label for="talla-prod-10" class="color-label">Cuantos dias:</label>
+                    <select id="talla-prod-10" class="color-select">
+                        <option value="">-- Selecciona Dias --</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="12">12</option>
+
+                    </select>
+
+                    <div class="botones-acciones">
+                        <button class="btn-comprar" onclick="mostrarAlertaCompra('Gorras mujer', 'color-prod-10', 'talla-prod-10')">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-talla" onclick="verificarTalla('Gorras mujer', 'S, M, L')"><i class="fas fa-ruler-horizontal"></i> Tallas</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="main-footer" id="contacto">
+        <div class="footer-content">
+            
+            <div class="footer-section contact-info">
+                <h3 class="footer-brand">NARIÑO </h3>
+                <p>Estilo moderno, cómodo y versátil. Ropa ideal para tu vida activa, ya sea programando o jugando fútbol.</p>
+                
+                <div class="contact-links">
+                    <a href="mailto:info@urbanfit.co" class="contact-link email-link">
+                        <i class="fas fa-envelope"></i> urbanfitcalimoda@gmail.com
+                    </a>
+                    <a href="https://wa.me/573150921114?text=Hola,%20estoy%20interesado/a%20en%20los%20productos%20de%20Urban%20Fit." 
+                       target="_blank" class="contact-link whatsapp-footer-link">
+                        <i class="fab fa-whatsapp"></i> Chatea con Nosotros
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section oferta-container" id="promociones">
+                <h3>¡Ofertas de la Semana! ✨</h3>
+                
+                <div class="promo-box" onclick="showDynamicAlert('info', '¡Excelente elección! La PROMO 1 aplica automáticamente al añadir los productos al carrito.')">
+                    <p><strong>PROMO 1: HOTEL INTERCONTINENTAL</strong></p>
+                    <span>15% DE DESCUENTO</span>
+                    <i class="fas fa-percent"></i>
+                </div>
+                
+                <div class="promo-box" onclick="showDynamicAlert('info', 'La PROMO 2 te da 30% de descuento en el segundo artículo (Vestido) al comprar la Blusa.')">
+                    <p><strong>PROMO 2: RESERVAR DOS LUGARES Y TE LLEVAS 1 DIA MAS DE HOSPEDAJE</strong></p>
+                    <span>30% </span>
+                    <i class="fas fa-gift"></i>
+                </div>
+            </div>
+            
+            <div class="footer-section social-media">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#lugares"><i class="fas fa-chevron-right"></i> LUGARES</a></li>
+                    <li><a href="#hotel"><i class="fas fa-chevron-right"></i> HOTEL</a></li>
+                    <li><a href="#" onclick="openCartModal()"><i class="fas fa-shopping-bag"></i> Ver Carrito</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> Políticas de Envío</a></li>
+                </ul>
+                
+                <h3>Síguenos</h3>
+                <div class="social-icons-wrapper">
+                    <a href="https://www.instagram.com/urbanfitcalimoda?igsh=MWZxaGNqYmI0a3NxYw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Urban Fit. Todos los derechos reservados. | Programado con pasión por un futuro desarrollador.
+        </div>
+    </footer>
+    <a href="https://wa.me/573150921114?text=Hola,%20estoy%20interesado/a%20en%20los%20productos%20de%20Urban%20Fit." 
+       target="_blank" class="float-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeCartModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-shopping-cart"></i> 
+                <h2>Tu Carrito de Compras</h2>
+            </div>
+            
+            <div id="cart-items-container">
+                </div>
+            
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <span>Total Estimado:</span>
+                    <span id="cart-total-price" class="total-price-value">$ 0 COP</span>
+                </div>
+                <button class="btn-checkout" onclick="openCheckoutModal()">
+                    Finalizar Compra <i class="fas fa-credit-card"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content welcome-content">
+            <span class="close-button" onclick="closeWelcomeModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-rocket"></i> 
+                <h2>¡Bienvenido/a a Urban Fit!</h2>
+            </div>
+            <div class="modal-body welcome-message">
+                <p>🚀 Gracias por visitar nuestro Catálogo O/I 2025.</p>
+                <p>Sabemos que te gusta la **programación** y el **fútbol**, por eso diseñamos ropa con el equilibrio perfecto entre **estilo urbano, comodidad tecnológica y rendimiento deportivo**.</p>
+                <p>Explora nuestras colecciones y no olvides revisar la sección de **Promociones** al final de la página.</p>
+                <button class="btn-accept" onclick="closeWelcomeModal()">¡Comprar Ahora!</button>
+            </div>
+        </div>
+    </div>
+    <div id="dynamicAlertModal" class="modal dynamic-alert">
+        <div class="modal-content dynamic-content">
+            <div class="alert-icon">
+                <i id="dynamic-alert-icon" class="fas fa-info-circle"></i> 
+                <h3 id="dynamic-alert-title">Alerta</h3>
+            </div>
+            <p id="dynamic-alert-message">Este es un mensaje de alerta.</p>
+            <button class="btn-accept btn-small" onclick="closeDynamicAlertModal()">Entendido</button>
+        </div>
+    </div>
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content checkout-content">
+            <span class="close-button" onclick="closeCheckoutModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-lock"></i> 
+                <h2>Proceso de Pago Seguro</h2>
+            </div>
+            <div class="modal-body checkout-form">
+                <p class="checkout-total-display">Total a Pagar: <span id="checkout-total-price-value" class="total-price-value">$ 0 COP</span></p>
+
+                <p>¡Solo un paso más! Completa tus datos de envío y elige tu método de pago.</p>
+                
+                <form id="payment-form">
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <input type="text" placeholder="Dirección de Envío Completa" required>
+                    
+                    <label for="payment-method">Método de Pago:</label>
+                    <select id="payment-method" required>
+                        <option value="">-- Seleccione una opción --</option>
+                        <option value="card"><i class="fas fa-credit-card"></i> Tarjeta de Crédito/Débito</option>
+                        <option value="pse"><i class="fas fa-university"></i> PSE (Transferencia Bancaria)</option>
+                        <option value="nequi"><i class="fas fa-mobile-alt"></i> Nequi / Daviplata</option>
+                    </select>
+                    
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+
+                    <button type="submit" class="btn-complete-purchase">
+                        Pagar y Finalizar <i class="fas fa-arrow-circle-right"></i>
+                    </button>
+                </form>
+
+            </div>
+            <div class="checkout-footer">
+                <p><i class="fas fa-shield-alt"></i> Transacción 100% segura. Envíos gratis a partir de $60.000 COP.</p>
+            </div>
+        </div>
+    </div>
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content confirmation-content">
+            <span class="close-button" onclick="closeConfirmationModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i> 
+                <h2>¡Compra Exitosa!</h2>
+            </div>
+            <div class="modal-body confirmation-body">
+                <p>Tu pedido ha sido procesado con éxito. ¡Gracias por elegir Urban Fit!</p>
+                
+                <div class="confirmation-summary">
+                    <p><strong>Total Pagado:</strong> <span id="conf-total-price" class="total-price-value">$ 0 COP</span></p>
+                    <p><strong>Método de Pago:</strong> <span id="conf-payment-method">Tarjeta de Crédito</span></p>
+                    <p><strong>Número de Pedido:</strong> <span id="conf-order-id">UF-2025-XXXX</span></p>
+                </div>
+                
+                <p class="reembolso-note">
+                    <strong>Importante:</strong> Guarda este comprobante. Es tu **factura electrónica** y es *obligatoria* para cualquier proceso de cambio o **reembolso**.
+                </p>
+                
+                <button class="btn-download-invoice" onclick="downloadInvoice()">
+                    <i class="fas fa-file-invoice"></i> Descargar Factura Electrónica
+                </button>
+            </div>
+            <div class="checkout-footer">
+                <p><i class="fas fa-truck"></i> Tu pedido será despachado en las próximas 24 horas.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script> 
+</body>
+</html>
